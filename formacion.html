@@ -7,205 +7,215 @@
 <meta name="description" content="Estancias posdoctorales en el instituto y cómo solicitarlas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap">
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/main.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#contenido">Saltar al contenido</a>
+<a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
 
-<div class="util">
-  <div class="wrap util-in">
-    <span>Universidad de Guadalajara · Centro Universitario de Ciencias de la Salud</span>
-    <div class="lang" role="group" aria-label="Idioma">
+<div class="barra-superior">
+  <div class="contenedor barra-superior-contenido">
+    <a class="barra-superior-nombre" href="https://www.udg.mx" target="_blank" rel="noopener">Universidad de Guadalajara</a>
+    <div class="selector-idioma" role="group" aria-label="Idioma">
       <button type="button" data-lang="es" aria-pressed="true">ES</button>
       <button type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
   </div>
 </div>
 
-<header class="hdr">
-  <div class="wrap">
-    <div class="hdr-top">
-      <a class="brand" href="index.html">
-        <span class="mark" aria-hidden="true">INNT</span>
+<header class="encabezado">
+  <div class="contenedor">
+    <div class="encabezado-superior">
+      <a class="marca" href="index.html">
+        <span class="imagen-pendiente imagen-logo imagen-logo-cuadrada" aria-hidden="true">Logo</span>
         <span>
-          <span class="brand-name">Instituto de Nutrigenética y Nutrigenómica Traslacional</span>
-          <span class="brand-sub">Centro Universitario de Ciencias de la Salud · Universidad de Guadalajara</span>
+          <span class="marca-nombre">Instituto de Nutrigenética y Nutrigenómica Traslacional</span>
+          <span class="marca-subtitulo">Centro Universitario de Ciencias de la Salud</span>
         </span>
       </a>
-      <div class="ph logo-ph">[Logo UdG / CUCS]</div>
-    </div>
-    <div class="navrow">
-      <nav aria-label="Principal">
-        <ul class="nav">
-    <li class="navitem">
-      <button type="button" class="nav-btn" data-dropdown aria-expanded="false" aria-controls="menu-nos">Nosotros<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-      <div class="dd mega mega-2" id="menu-nos" hidden>
-        <div class="dd-col">
-          <span class="dd-title">El instituto</span>
-          <ul>
-          <li><a class="dd-link dd-all" href="nosotros.html">Presentación</a></li>
-          <li><a class="dd-link" href="nosotros.html#mision">Misión, visión y valores</a></li>
-          <li><a class="dd-link" href="contacto.html">Ubicación y contacto</a></li>
-          </ul>
-        </div>
-        <div class="dd-col">
-          <span class="dd-title">Nuestro equipo</span>
-          <ul>
-          <li><a class="dd-link dd-all" href="equipo.html">Todo el equipo</a></li>
-          <li><a class="dd-link" href="equipo.html?equipo=dir">Dirección</a></li>
-          <li><a class="dd-link" href="equipo.html?equipo=prof">Profesores investigadores</a></li>
-          <li><a class="dd-link" href="equipo.html?equipo=post">Investigadores posdoctorales</a></li>
-          <li><a class="dd-link" href="equipo.html?equipo=est">Estudiantes</a></li>
-          <li><a class="dd-link" href="equipo.html?equipo=tec">Personal técnico y administrativo</a></li>
-          </ul>
-        </div>
-      </div>
-    </li>
-    <li class="navitem">
-      <button type="button" class="nav-btn" data-dropdown aria-expanded="false" aria-controls="menu-inv">Investigación<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-      <div class="dd mega mega-2" id="menu-inv" hidden>
-        <div class="dd-col">
-          <span class="dd-title">Líneas de investigación</span>
-          <ul>
-          <li><a class="dd-link dd-all" href="investigacion.html">Todas las líneas</a></li>
-          <li><a class="dd-link" href="investigacion.html#area-gf">Genómica funcional</a></li>
-          <li><a class="dd-link" href="investigacion.html#area-epi">Regulación génica y epigenética</a></li>
-          <li><a class="dd-link" href="investigacion.html#area-bio">Bioinformática y genómica computacional</a></li>
-          <li><a class="dd-link" href="investigacion.html#area-enf">Genética de enfermedades humanas</a></li>
-          </ul>
-        </div>
-        <div class="dd-col">
-          <span class="dd-title">Proyectos</span>
-          <ul>
-          <li><a class="dd-link dd-all" href="proyectos.html">Proyectos en curso</a></li>
-          <li><a class="dd-link" href="participa.html">Estudios que buscan participantes</a></li>
-          <li><a class="dd-link" href="contacto.html">Colaboraciones</a></li>
-          </ul>
-        </div>
-      </div>
-    </li>
-    <li class="navitem">
-      <button type="button" class="nav-btn" data-dropdown aria-expanded="false" aria-controls="menu-for" aria-current="page">Formación<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-      <div class="dd mega" id="menu-for" hidden>
-        <div class="dd-col">
-          <span class="dd-title">Formación y oportunidades</span>
-          <ul>
-          <li><a class="dd-link dd-all" href="formacion.html">Cómo unirte al instituto</a></li>
-          <li><a class="dd-link" href="formacion.html#posdoc">Estancias posdoctorales</a></li>
-          </ul>
-        </div>
-      </div>
-    </li>
-    <li class="navitem">
-      <button type="button" class="nav-btn" data-dropdown aria-expanded="false" aria-controls="menu-part">Participa en estudios<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-      <div class="dd mega mega-2" id="menu-part" hidden>
-        <div class="dd-col">
-          <span class="dd-title">Estudios abiertos</span>
-          <ul>
-          <li><a class="dd-link" href="participa.html?estudio=estudio-raras">Estudio de familias con enfermedades raras</a></li>
-          <li><a class="dd-link" href="participa.html?estudio=estudio-epi">Epigenoma del envejecimiento</a></li>
-          </ul>
-        </div>
-        <div class="dd-col">
-          <span class="dd-title">Antes de participar</span>
-          <ul>
-          <li><a class="dd-link" href="participa.html#como-funciona">Cómo funciona la participación</a></li>
-          <li><a class="dd-link" href="contacto.html">Hablar con coordinación de estudios</a></li>
-          </ul>
-        </div>
-      </div>
-    </li>
-    <li class="navitem">
-      <button type="button" class="nav-btn" data-dropdown aria-expanded="false" aria-controls="menu-not">Noticias y blog<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-      <div class="dd mega mega-2" id="menu-not" hidden>
-        <div class="dd-col">
-          <span class="dd-title">Noticias y eventos</span>
-          <ul>
-          <li><a class="dd-link dd-all" href="noticias.html">Todas las noticias</a></li>
-          <li><a class="dd-link" href="noticias.html?tema=evento">Seminarios y eventos</a></li>
-          <li><a class="dd-link" href="noticias.html?tema=convocatoria">Convocatorias</a></li>
-          <li><a class="dd-link" href="noticias.html?tema=publicacion">Publicaciones recientes</a></li>
-          </ul>
-        </div>
-        <div class="dd-col">
-          <span class="dd-title">Blog</span>
-          <ul>
-          <li><a class="dd-link dd-all" href="blog.html">Todas las entradas</a></li>
-          <li><a class="dd-link" href="blog.html?tema=divulgacion">Divulgación</a></li>
-          <li><a class="dd-link" href="blog.html?tema=nutricion-genes">Nutrición y genes</a></li>
-          <li><a class="dd-link" href="blog.html?tema=detras">Detrás de la investigación</a></li>
-          </ul>
-        </div>
-      </div>
-    </li>
-    <li class="navitem"><a class="nav-btn" href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="tools">
-        <div class="navitem">
-          <button type="button" class="icon-btn" data-dropdown aria-expanded="false" aria-controls="menu-rapidos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>Enlaces rápidos</button>
-          <ul class="dd dd-right" id="menu-rapidos" hidden>
-            <li><a class="dd-link" href="participa.html">Estudios abiertos a voluntarios</a></li>
-            <li><a class="dd-link" href="formacion.html">Convocatorias y plazas</a></li>
-            <li><a class="dd-link" href="equipo.html">Directorio del equipo</a></li>
-            <li><a class="dd-link" href="blog.html">Blog</a></li>
-            <li><a class="dd-link" href="contacto.html">Contacto</a></li>
-            <li class="dd-sep" aria-hidden="true"></li>
-            <li><a class="dd-link" href="https://www.udg.mx" target="_blank" rel="noopener">Universidad de Guadalajara<span class="dd-desc">udg.mx</span></a></li>
-            <li><a class="dd-link" href="https://www.cucs.udg.mx" target="_blank" rel="noopener">Centro Universitario de Ciencias de la Salud<span class="dd-desc">cucs.udg.mx</span></a></li>
-          </ul>
-        </div>
-        <button type="button" class="icon-btn" data-search-toggle aria-expanded="false" aria-controls="buscador" aria-label="Buscar en el sitio"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
-      </div>
+      <div class="imagen-pendiente imagen-logo">[Logo UdG / CUCS]</div>
     </div>
   </div>
 </header>
 
-<div class="searchbar" id="buscador" role="search" hidden>
-  <form class="wrap searchbar-in" action="#" data-demo>
-    <div class="field">
-      <label for="buscar">Buscar en el sitio</label>
-      <input id="buscar" type="search" name="q" placeholder="Proyectos, personas, noticias…">
+<div class="barra-fija">
+  <div class="contenedor">
+    <div class="barra-navegacion">
+      <nav aria-label="Principal">
+        <button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal"><svg class="icono-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path class="icono-menu-abrir" d="M4 7h16M4 12h16M4 17h16"/><path class="icono-menu-cerrar" d="M6 6l12 12M18 6L6 18"/></svg>Menú</button>
+        <ul class="menu-principal" id="menu-principal">
+    <li class="menu-elemento">
+      <button type="button" class="menu-boton" data-dropdown aria-expanded="false" aria-controls="menu-nos">Nosotros<svg class="icono-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="desplegable desplegable-amplio desplegable-dos-columnas" id="menu-nos" hidden>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">El instituto</span>
+          <ul>
+          <li><a class="desplegable-enlace desplegable-enlace-principal" href="nosotros.html">Presentación</a></li>
+          <li><a class="desplegable-enlace" href="nosotros.html#mision">Misión, visión y valores</a></li>
+          <li><a class="desplegable-enlace" href="contacto.html">Ubicación y contacto</a></li>
+          </ul>
+        </div>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Nuestro equipo</span>
+          <ul>
+          <li><a class="desplegable-enlace desplegable-enlace-principal" href="equipo.html">Todo el equipo</a></li>
+          <li><a class="desplegable-enlace" href="equipo.html?equipo=dir">Dirección</a></li>
+          <li><a class="desplegable-enlace" href="equipo.html?equipo=prof">Profesores investigadores</a></li>
+          <li><a class="desplegable-enlace" href="equipo.html?equipo=post">Investigadores posdoctorales</a></li>
+          <li><a class="desplegable-enlace" href="equipo.html?equipo=est">Estudiantes</a></li>
+          <li><a class="desplegable-enlace" href="equipo.html?equipo=tec">Personal técnico y administrativo</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="menu-elemento">
+      <button type="button" class="menu-boton" data-dropdown aria-expanded="false" aria-controls="menu-inv">Investigación<svg class="icono-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="desplegable desplegable-amplio desplegable-dos-columnas" id="menu-inv" hidden>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Líneas de investigación</span>
+          <ul>
+          <li><a class="desplegable-enlace desplegable-enlace-principal" href="investigacion.html">Todas las líneas</a></li>
+          <li><a class="desplegable-enlace" href="investigacion.html#area-gf">Genómica funcional</a></li>
+          <li><a class="desplegable-enlace" href="investigacion.html#area-epi">Regulación génica y epigenética</a></li>
+          <li><a class="desplegable-enlace" href="investigacion.html#area-bio">Bioinformática y genómica computacional</a></li>
+          <li><a class="desplegable-enlace" href="investigacion.html#area-enf">Genética de enfermedades humanas</a></li>
+          </ul>
+        </div>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Proyectos</span>
+          <ul>
+          <li><a class="desplegable-enlace desplegable-enlace-principal" href="proyectos.html">Proyectos en curso</a></li>
+          <li><a class="desplegable-enlace" href="participa.html">Estudios que buscan participantes</a></li>
+          <li><a class="desplegable-enlace" href="contacto.html">Colaboraciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="menu-elemento">
+      <button type="button" class="menu-boton" data-dropdown aria-expanded="false" aria-controls="menu-for" aria-current="page">Formación<svg class="icono-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="desplegable desplegable-amplio" id="menu-for" hidden>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Formación y oportunidades</span>
+          <ul>
+          <li><a class="desplegable-enlace desplegable-enlace-principal" href="formacion.html">Cómo unirte al instituto</a></li>
+          <li><a class="desplegable-enlace" href="formacion.html#posdoc">Estancias posdoctorales</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="menu-elemento">
+      <button type="button" class="menu-boton" data-dropdown aria-expanded="false" aria-controls="menu-part">Participa en estudios<svg class="icono-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="desplegable desplegable-amplio desplegable-dos-columnas" id="menu-part" hidden>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Estudios abiertos</span>
+          <ul>
+          <li><a class="desplegable-enlace" href="participa.html?estudio=estudio-raras">Estudio de familias con enfermedades raras</a></li>
+          <li><a class="desplegable-enlace" href="participa.html?estudio=estudio-epi">Epigenoma del envejecimiento</a></li>
+          </ul>
+        </div>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Antes de participar</span>
+          <ul>
+          <li><a class="desplegable-enlace" href="participa.html#como-funciona">Cómo funciona la participación</a></li>
+          <li><a class="desplegable-enlace" href="contacto.html">Hablar con coordinación de estudios</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="menu-elemento">
+      <button type="button" class="menu-boton" data-dropdown aria-expanded="false" aria-controls="menu-not">Noticias y blog<svg class="icono-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="desplegable desplegable-amplio desplegable-dos-columnas" id="menu-not" hidden>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Noticias y eventos</span>
+          <ul>
+          <li><a class="desplegable-enlace desplegable-enlace-principal" href="noticias.html">Todas las noticias</a></li>
+          <li><a class="desplegable-enlace" href="noticias.html?tema=evento">Seminarios y eventos</a></li>
+          <li><a class="desplegable-enlace" href="noticias.html?tema=convocatoria">Convocatorias</a></li>
+          <li><a class="desplegable-enlace" href="noticias.html?tema=publicacion">Publicaciones recientes</a></li>
+          </ul>
+        </div>
+        <div class="desplegable-columna">
+          <span class="desplegable-titulo">Blog</span>
+          <ul>
+          <li><a class="desplegable-enlace desplegable-enlace-principal" href="blog.html">Todas las entradas</a></li>
+          <li><a class="desplegable-enlace" href="blog.html?tema=divulgacion">Divulgación</a></li>
+          <li><a class="desplegable-enlace" href="blog.html?tema=nutricion-genes">Nutrición y genes</a></li>
+          <li><a class="desplegable-enlace" href="blog.html?tema=detras">Detrás de la investigación</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="menu-elemento"><a class="menu-boton" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="herramientas">
+        <div class="menu-elemento">
+          <button type="button" class="boton-icono" data-dropdown aria-expanded="false" aria-controls="menu-rapidos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span class="boton-icono-texto">Enlaces rápidos</span></button>
+          <ul class="desplegable desplegable-derecha" id="menu-rapidos" hidden>
+            <li><a class="desplegable-enlace" href="participa.html">Estudios abiertos a voluntarios</a></li>
+            <li><a class="desplegable-enlace" href="formacion.html">Convocatorias y plazas</a></li>
+            <li><a class="desplegable-enlace" href="equipo.html">Directorio del equipo</a></li>
+            <li><a class="desplegable-enlace" href="blog.html">Blog</a></li>
+            <li><a class="desplegable-enlace" href="contacto.html">Contacto</a></li>
+            <li class="desplegable-separador" role="separator"></li>
+            <li><a class="desplegable-enlace" href="https://www.udg.mx" target="_blank" rel="noopener">Universidad de Guadalajara<span class="desplegable-descripcion">udg.mx</span></a></li>
+            <li><a class="desplegable-enlace" href="https://www.cucs.udg.mx" target="_blank" rel="noopener">Centro Universitario de Ciencias de la Salud<span class="desplegable-descripcion">cucs.udg.mx</span></a></li>
+          </ul>
+        </div>
+        <button type="button" class="boton-icono" data-search-toggle aria-expanded="false" aria-controls="buscador" aria-label="Buscar en el sitio"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      </div>
     </div>
-    <button type="submit" class="btn btn-p">Buscar</button>
-  </form>
+  </div>
+  <search class="buscador" id="buscador" hidden>
+    <form class="contenedor buscador-contenido" action="#" data-demo>
+      <div class="campo">
+        <label for="buscar">Buscar en el sitio</label>
+        <input id="buscar" type="search" name="q" placeholder="Proyectos, personas, noticias…">
+      </div>
+      <button type="submit" class="boton boton-primario">Buscar</button>
+    </form>
+  </search>
 </div>
 
 <main id="contenido">
-<div class="page-hd">
-  <div class="wrap">
-    <p class="crumb"><a href="index.html">Inicio</a> / Formación y oportunidades</p>
+<header class="encabezado-pagina">
+  <div class="contenedor">
+    <nav class="migas" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><span aria-current="page">Formación y oportunidades</span></li>
+      </ol>
+    </nav>
     <h1>Formación y oportunidades</h1>
     <p>Buscamos personas curiosas y comprometidas. Aquí encontrarás qué ofrecemos y con quién hablar.</p>
   </div>
-</div>
+</header>
 
-<section class="sec" id="posdoc">
-  <div class="wrap with-aside">
-    <div class="card card-flat side-col">
-      <h2 class="h-card-lg">Estancias posdoctorales</h2>
+<section class="seccion" id="posdoc">
+  <div class="contenedor con-lateral">
+    <section class="tarjeta tarjeta-plana columna-lateral" aria-labelledby="h-posdoc">
+      <h2 id="h-posdoc" class="titulo-tarjeta-grande">Estancias posdoctorales</h2>
       <p>Posiciones financiadas por proyecto y apoyo para preparar convocatorias propias.</p>
-      <h3 class="h-small">Qué necesitas enviar</h3>
-      <ul class="list">
+      <h3 class="titulo-chico">Qué necesitas enviar</h3>
+      <ul class="lista">
         <li>Currículum con publicaciones</li>
         <li>Propuesta de investigación (1 a 2 páginas)</li>
         <li>Tres referencias</li>
       </ul>
-      <div class="contact-route">
-        <span class="eyebrow eyebrow-sm">Te atenderá</span>
+      <address class="contacto-responsable">
+        <p class="antetitulo antetitulo-chico">Te atenderá</p>
         <strong>Dirección del instituto</strong>
         <a href="mailto:postdoc@[dominio].edu">postdoc@[dominio].edu</a>
+      </address>
+    </section>
+    <form class="formulario columna-principal" action="#" data-demo aria-labelledby="h-solicitud">
+      <h2 id="h-solicitud" class="titulo-tarjeta-grande">Envía tu solicitud</h2>
+      <div class="rejilla-formulario">
+        <div class="campo"><label for="f-nombre">Nombre completo</label><input id="f-nombre" name="nombre" type="text" autocomplete="name" required></div>
+        <div class="campo"><label for="f-correo">Correo electrónico</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
       </div>
-    </div>
-    <form class="form main-col" action="#" data-demo aria-labelledby="h-solicitud">
-      <h2 id="h-solicitud" class="h-card-lg">Envía tu solicitud</h2>
-      <div class="grid-form">
-        <div class="field"><label for="f-nombre">Nombre completo</label><input id="f-nombre" name="nombre" type="text" autocomplete="name" required></div>
-        <div class="field"><label for="f-correo">Correo electrónico</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
-      </div>
-      <div class="field">
+      <div class="campo">
         <label for="f-linea">Línea de investigación de interés</label>
         <select id="f-linea" name="linea">
           <option>Genómica funcional</option>
@@ -215,49 +225,55 @@
           <option>Aún no lo sé</option>
         </select>
       </div>
-      <div class="field"><label for="f-mensaje">Cuéntanos sobre ti</label><textarea id="f-mensaje" name="mensaje" rows="5"></textarea></div>
-      <div class="field"><label for="f-cv">Adjunta tu CV (PDF, máx. 5 MB)</label><input id="f-cv" name="cv" type="file" accept=".pdf"></div>
-      <p class="hint">Tu solicitud se enviará a la Dirección del instituto.</p>
-      <p class="ok" role="status" tabindex="-1" hidden>Gracias. Hemos recibido tu solicitud y la Dirección del instituto te responderá por correo.</p>
-      <div><button type="submit" class="btn btn-p">Enviar solicitud</button></div>
+      <div class="campo"><label for="f-mensaje">Cuéntanos sobre ti</label><textarea id="f-mensaje" name="mensaje" rows="5"></textarea></div>
+      <div class="campo"><label for="f-cv">Adjunta tu CV (PDF, máx. 5 MB)</label><input id="f-cv" name="cv" type="file" accept=".pdf"></div>
+      <p class="nota">Tu solicitud se enviará a la Dirección del instituto.</p>
+      <p class="mensaje-exito" role="status" tabindex="-1" hidden>Gracias. Hemos recibido tu solicitud y la Dirección del instituto te responderá por correo.</p>
+      <div><button type="submit" class="boton boton-primario">Enviar solicitud</button></div>
     </form>
   </div>
 </section>
 </main>
 
-<footer class="ftr">
-  <div class="wrap stack-xxl">
-    <div class="ftr-cols">
-      <div class="stack">
-        <span class="mark mark-light" aria-hidden="true">INNT</span>
+<footer class="pie">
+  <div class="contenedor apilado-enorme">
+    <div class="pie-columnas">
+      <div class="apilado">
+        <span class="logotipo logotipo-claro" aria-hidden="true">INNT</span>
         <p>Instituto de Nutrigenética y Nutrigenómica Traslacional<br>Centro Universitario de Ciencias de la Salud<br>Universidad de Guadalajara</p>
       </div>
-      <div>
-        <h4>Nosotros</h4>
-        <ul class="ftr-links">
+      <nav aria-labelledby="pie-nosotros">
+        <h2 id="pie-nosotros">Nosotros</h2>
+        <ul class="pie-enlaces">
           <li><a href="nosotros.html">Acerca del instituto</a></li>
           <li><a href="equipo.html">Nuestro equipo</a></li>
           <li><a href="noticias.html">Noticias y eventos</a></li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Investigación y formación</h4>
-        <ul class="ftr-links">
+      </nav>
+      <nav aria-labelledby="pie-investigacion">
+        <h2 id="pie-investigacion">Investigación y formación</h2>
+        <ul class="pie-enlaces">
           <li><a href="investigacion.html">Líneas de investigación</a></li>
           <li><a href="proyectos.html">Proyectos en curso</a></li>
           <li><a href="formacion.html">Formación y oportunidades</a></li>
           <li><a href="participa.html">Participa en estudios</a></li>
         </ul>
-      </div>
+      </nav>
       <div>
-        <h4>Contacto</h4>
-        <p>[Edificio], CUCS<br>Guadalajara, Jalisco<br><a href="mailto:info@[dominio].edu">info@[dominio].edu</a></p>
+        <h2>Contacto</h2>
+        <address>[Edificio], CUCS<br>Guadalajara, Jalisco<br><a href="mailto:info@[dominio].edu">info@[dominio].edu</a></address>
       </div>
     </div>
-    <div class="ftr-bottom">
-      <span>© [Año] Universidad de Guadalajara. Todos los derechos reservados.</span>
-      <span class="cluster"><a href="#accesibilidad">Accesibilidad</a><a href="#privacidad">Privacidad</a><a href="#acceso">Acceso miembros</a></span>
+    <div class="pie-inferior">
+      <p>© [Año] Universidad de Guadalajara. Todos los derechos reservados.</p>
+      <nav aria-label="Avisos del sitio">
+        <ul class="fila lista-limpia">
+          <li><a href="#accesibilidad">Accesibilidad</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+          <li><a href="#acceso">Acceso miembros</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 </footer>

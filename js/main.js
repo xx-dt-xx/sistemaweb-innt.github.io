@@ -23,24 +23,52 @@
     });
   }
 
+  /* ---------- Botón «Menú» (pantallas pequeñas) ----------
+     El CSS muestra la lista del menú cuando el botón tiene aria-expanded="true". */
+  var menuBtn = document.querySelector('.boton-menu');
+
+  function setMenuOpen(open) {
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', String(open));
+  }
+
+  function menuIsOpen() {
+    return !!menuBtn && menuBtn.getAttribute('aria-expanded') === 'true';
+  }
+
+  if (menuBtn) {
+    menuBtn.addEventListener('click', function () {
+      var open = !menuIsOpen();
+      closeAll();
+      setMenuOpen(open);
+    });
+  }
+
   toggles.forEach(function (btn) {
     btn.addEventListener('click', function (event) {
       event.stopPropagation();
       var open = btn.getAttribute('aria-expanded') === 'true';
       closeAll(btn);
+      // Un desplegable fuera del menú (p. ej. «Enlaces rápidos») cierra el menú.
+      if (!btn.closest('.menu-principal')) setMenuOpen(false);
       setOpen(btn, !open);
     });
   });
 
   document.addEventListener('click', function (event) {
-    if (!event.target.closest('.navitem')) closeAll();
+    if (!event.target.closest('.menu-elemento')) closeAll();
+    if (menuIsOpen() && !event.target.closest('nav')) setMenuOpen(false);
   });
 
   document.addEventListener('keydown', function (event) {
     if (event.key !== 'Escape') return;
     var openBtn = toggles.filter(function (b) { return b.getAttribute('aria-expanded') === 'true'; })[0];
     closeAll();
-    if (openBtn) openBtn.focus();
+    if (openBtn) {
+      openBtn.focus();
+    } else if (menuIsOpen()) {
+      setMenuOpen(false);
+      menuBtn.focus();
+    }
   });
 
   /* ---------- Buscador ---------- */
@@ -57,7 +85,7 @@
   }
 
   /* ---------- Selector de idioma (la traducción se conectará después) ---------- */
-  document.querySelectorAll('.lang').forEach(function (group) {
+  document.querySelectorAll('.selector-idioma').forEach(function (group) {
     var buttons = group.querySelectorAll('button');
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -143,7 +171,7 @@
   document.querySelectorAll('form[data-demo]').forEach(function (form) {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
-      var ok = form.querySelector('.ok');
+      var ok = form.querySelector('.mensaje-exito');
       if (ok) {
         ok.hidden = false;
         ok.focus();
